@@ -1,0 +1,98 @@
+Estrutura HTML base:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+</html>
+
+Explicação linha por linha:
+1) <!DOCTYPE html>
+Este declara o tipo do documento, informando ao navegador que utiliza o padrão do HTML5.
+Existe em razão de haver várias versões do HTML no passado e sem essa declaração vários navegadores podem apresentar comportamentos inesperados a depender dos elementos da página.
+Com: <!DOCTYPE html> o navegador utiliza os padrões modernos, por isso deve sempre ser a primeira linha do documento.
+
+2) <html lang="en">
+Essa é a tag raiz da página, onde Todo o conteúdo HTML fica dentro dela.
+Ela possui um atributo: lang="en", onde define o idioma principal da página.
+No exemplo de lang="en", significa Inglês.
+Normalmente usamos <html lang="pt-BR"> para páginas em português.
+Isso ajuda:
+Leitores de tela.
+Mecanismos de busca.
+Tradutores automáticos.
+Corretores ortográficos.
+
+3) <head>
+Contém informações sobre a página, mas não o que será exibido ao usuário.
+É a parte de configurações do documento.
+Exemplos do que costuma ficar nela são:
+Título.
+CSS.
+Fontes.
+Ícone da aba (favicon).
+Scripts.
+Informações para mecanismos de busca.
+Codificação de caracteres.
+
+4) <meta charset="UTF-8">
+Essa linha define a codificação dos caracteres.
+
+UTF-8 É um padrão que permite representar praticamente todos os caracteres usados no mundo.
+Por exemplo: á, é, ã, ç, €, 漢, 😊.
+Sem isso caracteres comuns costumam aparecer assim:
+OlÃ¡
+VocÃª
+AÃ§Ã£o
+Hoje praticamente sempre se usa UTF-8. Faz parte do padrão moderno.
+
+5) <meta name="viewport" content="width=device-width, initial-scale=1.0">
+Essa linha é extremamente importante para dispositivos móveis.
+Antes dela não havia configuração. Navegadores tentavam mostrar páginas de 980px de largura, o que reduzia todos os elementos, resultando em:
+Letras minúsculas.
+Necessidade de zoom.
+layout quebrado.
+
+Cada parte parte tem seu propósito.
+width=device-width
+Diz que a largura da página deve ser igual à largura do dispositivo.
+Exemplo:
+Se o celular possui 500 pixels a página terá 500 pixels.
+
+initial-scale=1.0
+Define o nível inicial de zoom.
+1.0 = 100%.
+Não amplia nem reduz automaticamente.
+
+Basicamente essa linha é essencial para criar sites responsivos. Faz a página funcionar corretamente em celulares, tablets, notebooks e desktops.
+
+6) <title>
+Define o título da página.
+Esse texto aparece na aba do navegador, histórico, favoritos e resultados de busca.
+Exemplo: 
+<title>Meu Primeiro Site</title>
+Na aba ficará escrito Meu Primeiro Site.
+
+O </head> Fecha a seção de configurações.
+Em algumas tags, "/" significa fechamento.
+Tudo o que vier depois será o conteúdo da página.
+
+7. <body>
+É onde fica todo o conteúdo visível.
+Textos, imagens, botões, menus, vídeos, tabelas, formulários, listas.
+
+Exemplo:
+
+<body>
+    <h1>Olá!</h1>
+    <p>Bem-vindo ao meu site.</p>
+</body>
+
+O navegador exibirá:
+Olá!
+Bem-vindo ao meu site.
