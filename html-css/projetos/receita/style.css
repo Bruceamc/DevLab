@@ -1,0 +1,230 @@
+/*------------------------
+CONFIGURAÇÕES GERAIS
+------------------------*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 40px 20px;
+    background-color: #D6D5D5;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/*------------------------
+caixa PRINCIPAL
+------------------------*/
+.caixa{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border: 2px solid #000000;
+}
+
+
+/*------------------------
+HEADER
+------------------------*/
+.header{
+    padding: 50px 40px;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.categoria{
+    margin: 0 0 10px;
+    color: #D6D5D5;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+h1{
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+.legenda{
+    max-width: 600px;
+    margin: 20px 0 30px;
+
+    color: #D6D5D5;
+
+    font-size: 1.1rem;
+}
+
+
+/*------------------------
+INFORMAÇÕES DA RECEITA
+------------------------*/
+.receita{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.receita-item{
+    padding: 15px;
+    border: 1px solid #464E55;
+}
+.receita-item span{
+    display: block;
+    margin-bottom: 8px;
+    color: #D6D5D5;
+    font-size: 0.85rem;
+}
+.receita-item strong{
+    display: block;
+    font-size: 0.9rem;
+}
+
+/*------------------------
+SECTIONS
+------------------------*/
+.section{
+    padding: 40px;
+    border-bottom: 1px solid #D6D5D5;
+}
+h2{
+    margin-top: 0;
+    font-size: 1.8rem;
+    border-left: 6px solid #000000;
+    padding-left: 12px;
+}
+.section ul,
+.section ol{
+    padding-left: 25px;
+}
+.section li{
+    margin-bottom: 15px;
+}
+
+/*------------------------
+INGREDIENTES
+------------------------*/
+.ingredientes-lista li::marker{
+    color: #464E55;
+    font-size: 1.3rem;
+}
+
+/*------------------------
+MODO DE PREPARO
+------------------------*/
+.passos{
+    counter-reset: steps;
+    list-style: none;
+    padding-left: 0;
+}
+.passos li{
+    position: relative;
+    padding: 18px 20px 18px 70px;
+    background-color: #FFFFFF;
+    border: 1px solid #D6D5D5;
+}
+.passos li::before{
+    content: counter(steps);
+    counter-increment: steps;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background-color: #464E55;
+    color: #FFFFFF;
+    border-radius: 50%;
+    font-weight: bold;
+}
+.passos .atencao{
+    background-color: #000000;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+/*------------------------
+RESULTADO FINAL
+------------------------*/
+.resultado-section{
+    background-color: #D6D5D5;
+}
+.destaque{
+    padding: 20px;
+    background-color: #464E55;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+/*------------------------
+OBSERVAÇÃO
+------------------------*/
+.nota{
+    padding: 40px;
+
+    background-color: #FFFFFF;
+}
+
+blockquote{
+    margin: 25px 0;
+
+    padding: 25px;
+
+    background-color: #000000;
+    color: #FFFFFF;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    border-left: 8px solid #464E55;
+}
+
+.nota strong{
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 12px 20px;
+
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 700px){
+
+    body{
+        padding: 20px 10px;
+    }
+
+    .caixa{
+        box-shadow: 6px 6px 0 #464E55;
+    }
+
+    .header,
+    .section,
+    .nota{
+        padding: 30px 20px;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    .receita{
+        grid-template-columns: 1fr;
+    }
+
+    .receita-item{
+        padding: 12px;
+    }
+
+    .passos li{
+        padding-left: 60px;
+    }
+}

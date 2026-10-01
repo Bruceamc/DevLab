@@ -1,0 +1,418 @@
+/*---------------------------------
+CONFIGURAÇÕES GENÉRICAS
+---------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #434b53;
+    color: black;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/*---------------------------------
+CONTAINER PRINCIPAL
+---------------------------------*/
+.perfil{
+    width: 100%;
+    max-width: 700px;
+    background-color: rgb(200, 200, 200);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px white;
+}
+
+/*---------------------------------
+CABEÇALHO
+---------------------------------*/
+.cabecalho{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.foto{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.cabecalho h1{
+    color: #434b53;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+.cargo{
+    color: #434b53;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.descricao{
+    line-height: 1.6;
+    color: black;
+}
+
+/*---------------------------------
+SEÇÕES
+---------------------------------*/
+.perfil-section{
+    margin-bottom: 30px;
+}
+.perfil-section h2{
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color: #434b53;
+}
+.perfil-section p{
+    line-height: 1.7;
+    color: black;
+}
+
+/*---------------------------------
+TECNOLOGIAS
+---------------------------------*/
+.tecnologias{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+}
+.tecnologias li{
+    background-color: #434b53;
+    color: #d3d3d3;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/*---------------------------------
+FORMAÇÃO
+---------------------------------*/
+.formacao{
+    margin-bottom: 30px;
+}
+.formacao h2{
+    font-size: 1.3rem;
+    color: #434b53;
+    margin-bottom: 15px;
+}
+/* Card da formação */
+.formacao-item{
+    padding: 20px;
+    background-color: white;
+    border-left: 5px solid #64747c;
+    border-radius: 8px;
+    margin: 10px;
+}
+/* Nome do curso */
+.formacao-item h3{
+    font-size: 1.1rem;
+    color: #434b53;
+    margin-bottom: 8px;
+}
+/* Descrição */
+.formacao-item p{
+    color: #434b53;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+/* Período */
+.formacao-periodo{
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #434b53;
+}
+
+/*---------------------------------
+CARD DE PROJETO
+---------------------------------*/
+.projetos h2{
+    color: #434b53;
+    margin-bottom: 20px;}
+.projeto{
+    background-color: #ffff;
+    border: 1px solid #d3d3d3;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px #434b53;
+    transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+    margin-bottom: 8px;
+}
+/* IMAGEM DO PROJETO */
+.projeto img{
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+/* CONTEÚDO DO CARD */
+.projeto h3,
+.projeto p,
+.projeto a{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.projeto h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color:#434b53;
+}
+.projeto p{
+    line-height: 1.6;
+    color: #434b53;
+    margin-bottom: 10px;
+}
+/* TECNOLOGIAS */
+.projeto p:nth-of-type(2){
+    color: #434b53;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+/* LINKS */
+.projeto a{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 16px;
+    border-radius: 6px;
+    background-color: #434b53;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.projeto a:hover{
+    background-color: #64747c;
+}
+/* EFEITO AO PASSAR O MOUSE */
+.projeto:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+/*---------------------------------
+EXPERIÊNCIA
+---------------------------------*/
+.experiencia{
+    margin:30px 0px 30px 0px;
+}
+.experiencia h2{
+    font-size: 1.3rem;
+    color: #434b53;
+    margin-bottom: 15px;
+}
+/* ITEM DE EXPERIÊNCIA */
+.experiencia-item{
+    padding: 20px;
+    background-color: #fff;
+    border-left: 4px solid #434b53;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #434b53;
+    margin-bottom: 10px;
+    transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+/* TÍTULO */
+.experiencia-item h3{
+    font-size: 1.1rem;
+    color: #434b53;
+    margin-bottom: 8px;
+}
+/* DESCRIÇÃO */
+.experiencia-item p{
+    color: #434b53;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+/* PERÍODO */
+.experiencia-periodo{
+    color: #434b53;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+/* EFEITO HOVER */
+.experiencia-item:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px #434b53;
+}
+
+/*---------------------------------
+CURSOS E CERTIFICAÇÕES
+---------------------------------*/
+.cursos{
+    margin-bottom: 30px;
+}
+.cursos h2{
+    font-size: 1.3rem;
+    color: #434b53;
+    margin-bottom: 15px;
+}
+/*LISTA DE CURSOS*/
+.cursos-lista{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+/* CARD DO CURSO */
+.curso{
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #434b53;
+    border-radius: 8px;
+    transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+/* NOME DO CURSO */
+.curso h3{
+    font-size: 1.1rem;
+    color: #434b53;
+    margin-bottom: 10px;
+}
+/* PLATAFORMA */
+.curso-plataforma{
+    color: #434b53;
+    margin-bottom: 8px;
+}
+/* ANO */
+.curso__ano{
+    color: #434b53;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+/* EFEITO HOVER */
+.curso:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px #434b53;
+}
+/* RESPONSIVIDADE */
+@media (max-width: 600px){
+    .cursos-lista{
+        grid-template-columns: 1fr;
+    }
+}
+
+/*---------------------------------
+OBJETIVOS
+---------------------------------*/
+.objetivos{
+    margin-bottom: 30px;
+}
+.objetivos h2{
+    font-size: 1.3rem;
+    color: #434b53;
+    margin-bottom: 15px;
+}
+/* LISTA */
+.objetivos-lista{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+}
+/* ITEM   */
+.objetivos-lista li{
+    position: relative;
+    padding: 15px 20px 15px 45px;
+    background-color: #fff;
+    border: 1px solid #434b53;
+    border-radius: 8px;
+    color: #434b53;
+    line-height: 1.5;
+    transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+/* INDICADOR */
+.objetivos-lista li::before{
+    content: "✓";
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #434b53;
+    font-weight: bold;
+}
+/* HOVER */
+.objetivos-lista li:hover{
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/*---------------------------------
+CONTATO
+---------------------------------*/
+.contato{
+    margin-top: 40px;
+    padding: 35px 25px;
+    background-color: #fff;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #434b53;
+}
+/* TÍTULO */
+.contato h2{
+    font-size: 1.5rem;
+    color: #434b53;
+    margin-bottom: 12px;
+}
+/* DESCRIÇÃO */
+.contato-descricao{
+    max-width: 500px;
+    margin: 0 auto 25px;
+    color: #475569;
+    line-height: 1.6;
+}
+/* LINKS */
+.contato-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+/* BOTÕES */
+.contato-links a{
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #434b53;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+/* HOVER */
+.contato-links a:hover{
+    background-color: #434b53;
+    transform: translateY(-2px);
+}
+
+/*---------------------------------
+RESPONSIVIDADE
+---------------------------------*/
+@media (max-width: 600px){
+    .contato-links{
+        flex-direction: column;
+    }
+    .contato-links a{
+        width: 100%;
+        max-width: 250px;
+    }
+}

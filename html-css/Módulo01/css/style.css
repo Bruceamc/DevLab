@@ -2,13 +2,13 @@
    RESET E CONFIGURAÇÕES GERAIS
 ================================ */
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+body{
     font-family: "Inter", "Segoe UI", Arial, sans-serif;
     background-color: #f8fafc;
     color: #1e293b;
@@ -20,7 +20,7 @@ body {
    CONTAINER PRINCIPAL
 ================================ */
 
-.documentacao {
+.documentacao{
     width: min(1100px, 90%);
     margin: 40px auto;
 }
@@ -30,7 +30,7 @@ body {
    SEÇÕES
 ================================ */
 
-.documentacao section {
+.documentacao section{
     background-color: #ffffff;
     padding: 32px;
     margin-bottom: 32px;
@@ -47,7 +47,7 @@ body {
    TÍTULOS
 ================================ */
 
-h1 {
+h1{
     font-size: 2rem;
     color: #0f172a;
 
@@ -58,7 +58,7 @@ h1 {
 }
 
 
-h2 {
+h2{
     font-size: 1.4rem;
     color: #1d4ed8;
 
@@ -67,7 +67,7 @@ h2 {
 }
 
 
-h3 {
+h3{
     font-size: 1.1rem;
     color: #334155;
 
@@ -80,12 +80,12 @@ h3 {
    TEXTOS
 ================================ */
 
-p {
+p{
     margin-bottom: 16px;
 }
 
 
-strong {
+strong{
     color: #dc2626;
 }
 
@@ -94,7 +94,7 @@ strong {
    CÓDIGOS INLINE
 ================================ */
 
-code {
+code{
     font-family: "Fira Code", Consolas, monospace;
 
     background-color: #e2e8f0;
@@ -113,7 +113,7 @@ code {
    BLOCOS DE CÓDIGO
 ================================ */
 
-pre {
+pre{
     background-color: #0f172a;
 
     color: #e2e8f0;
@@ -132,7 +132,7 @@ pre {
 }
 
 
-pre code {
+pre code{
     background: none;
 
     color: inherit;
@@ -148,12 +148,12 @@ pre code {
 ================================ */
 
 ul,
-ol {
+ol{
     margin: 15px 0 20px 30px;
 }
 
 
-li {
+li{
     margin-bottom: 8px;
 }
 
@@ -162,7 +162,7 @@ li {
    TABELAS
 ================================ */
 
-table {
+table{
     width: 100%;
 
     border-collapse: collapse;
@@ -172,7 +172,7 @@ table {
 
 
 th,
-td {
+td{
     border: 1px solid #cbd5e1;
 
     padding: 12px;
@@ -181,7 +181,7 @@ td {
 }
 
 
-th {
+th{
     background-color: #e2e8f0;
 }
 
@@ -190,48 +190,48 @@ th {
    DESTAQUES DE SEÇÕES
 ================================ */
 
-.estrutura-completa {
+.estrutura-completa{
     border-left: 6px solid #2563eb;
 }
 
 
-.doctype {
+.doctype{
     border-left: 6px solid #dc2626;
 }
 
 
-.elemento-html {
+.elemento-html{
     border-left: 6px solid #16a34a;
 }
 
 
-.elemento-head {
+.elemento-head{
     border-left: 6px solid #9333ea;
 }
 
 
 .meta-charset,
-.meta-viewport {
+.meta-viewport{
     border-left: 6px solid #f59e0b;
 }
 
 
-.elemento-title {
+.elemento-title{
     border-left: 6px solid #0891b2;
 }
 
 
-.elemento-body {
+.elemento-body{
     border-left: 6px solid #ec4899;
 }
 
 
-.hierarquia-documento {
+.hierarquia-documento{
     border-left: 6px solid #64748b;
 }
 
 
-.fluxo-navegador {
+.fluxo-navegador{
     border-left: 6px solid #7c3aed;
 }
 
@@ -240,29 +240,29 @@ th {
    RESPONSIVIDADE
 ================================ */
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
 
-    .documentacao {
+    .documentacao{
         width: 95%;
     }
 
 
-    .documentacao section {
+    .documentacao section{
         padding: 20px;
     }
 
 
-    h1 {
+    h1{
         font-size: 1.6rem;
     }
 
 
-    h2 {
+    h2{
         font-size: 1.2rem;
     }
 
 
-    pre {
+    pre{
         font-size: 0.85rem;
     }
 
